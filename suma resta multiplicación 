@@ -1,0 +1,48 @@
+#include <stdio.h>
+
+int main(){
+    int opcion,a,b;
+
+    do{
+        system("cls");
+        printf("\n--- CALCULADORA ---\n");
+        printf("1.- Sumar\n");
+        printf("2.- Restar\n");
+        printf("3.- Multiplicar\n");
+        printf("4.- Salir\n");
+        printf("Opcion: ");
+        scanf("%d",&opcion);
+
+        switch(opcion){
+        case 1:
+            printf("Dame numero 1: "); scanf("%d",&a);
+            printf("Dame numero 2: "); scanf("%d",&b);
+            printf("Resultado: %d", a+b);
+            break;
+
+        case 2:
+            printf("Dame numero 1: "); scanf("%d",&a);
+            printf("Dame numero 2: "); scanf("%d",&b);
+            printf("Resultado: %d", a-b);
+            break;
+
+        case 3:
+            printf("Dame numero 1: "); scanf("%d",&a);
+            printf("Dame numero 2: "); scanf("%d",&b);
+            printf("Resultado: %d", a*b);
+            break;
+
+        case 4:
+            printf("Adios!");
+            break;
+
+        default:
+            printf("Opcion no valida");
+        }
+
+        printf("\n");
+        system("pause");
+    }while(opcion != 4);
+
+    return 0;
+}
