@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main(){
+    int opcion;
+    float a,b,c;
+
+    do{
+        system("cls");
+        printf("\n--- PROMEDIO ---\n");
+        printf("1.- Calcular\n");
+        printf("2.- Salir\n");
+        scanf("%d",&opcion);
+
+        switch(opcion){
+        case 1:
+            printf("Calif 1: "); scanf("%f",&a);
+            printf("Calif 2: "); scanf("%f",&b);
+            printf("Calif 3: "); scanf("%f",&c);
+            printf("Promedio: %.2f", (a+b+c)/3);
+            break;
+
+        case 2:
+            printf("Adios");
+            break;
+
+        default:
+            printf("Opcion no valida");
+        }
+
+        printf("\n");
+        system("pause");
+
+    }while(opcion != 2);
+
+    return 0;
+}
