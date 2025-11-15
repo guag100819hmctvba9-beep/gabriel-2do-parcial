@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main(){
+    int opcion,n;
+
+    do{
+        system("cls");
+        printf("\n--- CONTADOR ---\n");
+        printf("1.- Contar\n");
+        printf("2.- Salir\n");
+        scanf("%d",&opcion);
+
+        switch(opcion){
+        case 1:
+            printf("Hasta donde contar? ");
+            scanf("%d",&n);
+            for(int i=1;i<=n;i++)
+                printf("%d\n",i);
+            break;
+
+        case 2:
+            printf("Adios");
+            break;
+
+        default:
+            printf("Opcion no valida");
+        }
+
+        printf("\n");
+        system("pause");
+
+    }while(opcion != 2);
+
+    return 0;
+}
